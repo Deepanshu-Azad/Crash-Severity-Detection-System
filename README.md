@@ -5,6 +5,8 @@ Crash Severity Detection (CSD) is a complex system that utilizes various sensors
 Imagine a world where emergency responders instantly know the seriousness of a crash before they even arrive, allowing them to prioritize resources and potentially save lives. 
 That's the power of CSDS.
 
+![image](https://github.com/user-attachments/assets/8cf38e8a-7361-4848-b39f-cd166dc062d6)
+
 
 Benefits of CSDS:
 
@@ -19,14 +21,14 @@ Benefits of CSDS:
  The crucial information obtained via CSDS helps emergency responders prioritize dispatch and allocate resources effectively, potentially saving lives. 
 
 Here's a breakdown of the working principle:
-
+![image](https://github.com/user-attachments/assets/a2b5dd02-f4bd-425a-94f4-8f405263d4a6)
 
 We will be using an Arduino Uno, collision detection sensor, FSR and a GPS module to capture the co-ordinates of the location.
  
 These values will be processed by a python script and will be stored in a database. These database values will be updated on a webpage which can be seen and accessed by emergency services or even by police. 
 
 NodeMCU cannot store the previous accident values and all the data gets erased when it gets powered off. 
-This is the reason why we are not using NodeMCU for creating a local webpage. Instead, we will be creating a local server (Apache server) and a local database (mySQL database) using Xampp application.
+This is the reason why we are not using NodeMCU for creating a local webpage. Instead, we will be creating a local server (Apache server) and a local database (mySQL database) using XamppÂ application.
 Severity Classification and Response
 * - Based on the processed data and analysis, the system classifies the accident severity level. This information is then used for:
 * - Emergency dispatch prioritization:Severe accidents trigger immediate dispatch of ambulances, firefighters, and police.
@@ -44,8 +46,7 @@ Challenges and Future of CSDS:
 
 
 Arduino UNO R3
-
-
+![image](https://github.com/user-attachments/assets/89c453ad-d6c4-42d1-819e-9bcd8513366f)
 
 The Arduino UNO R3 board is a popular microcontroller board often used electronics prototyping, learning electronics, and building simple to complex projects. When paired with the Arduino software platform, it offers a user-friendly environment for programming and interacting with electronics.
 
@@ -77,9 +78,9 @@ Why use it with Arduino?
 * Relatively inexpensive and easy to set up.
 
 Capabilities:
-* Programming: The Arduino IDE (Integrated Development Environment) allows you to write code in C++ and upload it to the UNO R3. This code controls the behavior of the connected electronics.
-* Interfacing with Electronics: You can connect various sensors, actuators, displays, and other components to the I/O pins and control them using your code.
-* Prototyping and Project Development: The UNO R3 is ideal for building simple projects like blinking LEDs, reading sensor data, controlling motors, and more. It can also be used for more complex projects like robots, weather stations, and home automation systems.
+* Programming:Â The Arduino IDE (Integrated Development Environment) allows you to write code in C++ and upload it to the UNO R3.Â This code controls the behavior of the connected electronics.
+* Interfacing with Electronics:Â You can connect various sensors,Â actuators,Â displays,Â and other components to the I/O pins and control them using your code.
+* Prototyping and Project Development:Â The UNO R3 is ideal for building simple projects like blinking LEDs,Â reading sensor data,Â controlling motors,Â and more.Â It can also be used for more complex projects like robots,Â weather stations,Â and home automation systems.
 
 Applications in Crash Severity Detection Systems:
 
@@ -99,42 +100,41 @@ Trigger alarms or activate warning lights based on the calculated crash severity
 Advantages of using UNO R3 in CSDS:
 
 * Cost-effective: Affordable compared to specialized crash detection hardware.
-* Flexibility: Can be customized with various sensors and communication modules for specific needs.
-* Portability: Compact size and battery power options make it suitable for field deployments.
+* Flexibility:Â Can be customized with various sensors and communication modules for specific needs.
+* Portability:Â Compact size and battery power options make it suitable for field deployments.
 
 
    Impact Switch Collision Switch Sensor Module 
    
 The Impact Switch Collision Switch Sensor Module for Arduino (also known as a crash switch) is a simple but effective sensor for detecting collisions and sudden impacts. It can be a valuable component in a crash severity detection system for several reasons:
-
-
-
+![image](https://github.com/user-attachments/assets/c13297fa-df5a-403a-9d0d-7b6ac962b341)
 
 Functionality:
-* Binary output: The sensor outputs a low or high voltage signal depending on whether it detects a collision. This makes it easy to integrate with Arduino for further processing.
+* Binary output:Â The sensor outputs a low or high voltage signal depending on whether it detects a collision.Â This makes it easy to integrate with Arduino for further processing.
 
-* Sensitivity adjustment: Some models allow adjusting the sensitivity threshold, enabling detection of varying impact forces.
+* Sensitivity adjustment:Â Some models allow adjusting the sensitivity threshold,Â enabling detection of varying impact forces.
 
-* Compact and lightweight: The module is small and easy to install in various locations on a vehicle.
+* Compact and lightweight:Â The module is small and easy to install in various locations on a vehicle.
 
-* Low power consumption: Makes it suitable for battery-powered applications.
+* Low power consumption:Â Makes it suitable for battery-powered applications.
 
 
 
 Applications in Crash Severity Detection:
 
-* Collision detection: The primary function is to trigger the system upon any impact, initiating data recording and analysis.
+* Collision detection:Â The primary function is to trigger the system upon any impact,Â initiating data recording and analysis.
 
-* Impact magnitude estimation: By combining the sensor output with data from other sensors like accelerometers, the system can estimate the force and direction of the impact.
+* Impact magnitude estimation:Â By combining the sensor output with data from other sensors like accelerometers,Â the system can estimate the force and direction of the impact.
 
-* Early warning indicator: Detecting minor collisions can alert the system to potential danger, even if airbags are not deployed.
+* Early warning indicator:Â Detecting minor collisions can alert the system to potential danger,Â even if airbags are not deployed.
 
-* Crash location identification: Multiple sensors can be placed on different parts of the vehicle to identify the area of impact, providing valuable information for first responders.
+* Crash location identification:Â Multiple sensors can be placed on different parts of the vehicle to identify the area of impact,Â providing valuable information for first responders.
 
 NEO-6M TTL GPS Module with EPROM
 
 The NEO-6M TTL GPS module with EPROM is a powerful tool with potential applications in crash severity detection systems. Here's a breakdown of its features and how it can contribute to this technology:
 
+![image](https://github.com/user-attachments/assets/0d06fed2-af18-48dc-a954-2a1521761963)
 
 Features of NEO-6M TTL GPS Module with EPROM:
 
@@ -158,7 +158,7 @@ Applications in Crash Severity Detection Systems:
 Robodo SEN38 Force Sensor Resistor
 
 The Robodo SEN38 is a versatile force sensor resistor specifically designed for measuring impact forces in various applications, including crash severity detection systems (CSDS). Here's a closer look at its features and how it contributes to this crucial technology:
-
+![image](https://github.com/user-attachments/assets/577a51e9-aca1-43b0-b351-6872bde375c2)
 
 Features of the Robodo SEN38:
 
@@ -174,11 +174,11 @@ Features of the Robodo SEN38:
 
 Applications in Crash Severity Detection Systems:
 
-* Vehicle front and rear bumpers: Measures the initial impact force to estimate the severity of the collision and trigger airbags or other safety measures.
+* Vehicle front and rear bumpers:Â Measures the initial impact force to estimate the severity of the collision and trigger airbags or other safety measures.
 
-* Door panels and side skirts: Detects side impacts and helps determine the risk of occupant injuries.
+* Door panels and side skirts:Â Detects side impacts and helps determine the risk of occupant injuries.
 
-* Engine compartment: Monitors impact forces on the engine and surrounding components to assess potential damage and fire hazards.
+* Engine compartment:Â Monitors impact forces on the engine and surrounding components to assess potential damage and fire hazards.
 
 Large-scale implementation of Crash Severity Detection Systems (CSDS) requires a multifaceted approach encompassing several key areas:
 
