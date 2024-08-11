@@ -21,7 +21,9 @@ Benefits of CSDS:
  The crucial information obtained via CSDS helps emergency responders prioritize dispatch and allocate resources effectively, potentially saving lives. 
 
 Here's a breakdown of the working principle:
-![image](https://github.com/user-attachments/assets/a2b5dd02-f4bd-425a-94f4-8f405263d4a6)
+
+  ![WhatsApp Image 2024-08-11 at 14 59 01_c963bb7f](https://github.com/user-attachments/assets/cb96337d-2997-48fc-a8a4-f721061b3ca0)
+
 
 We will be using an Arduino Uno, collision detection sensor, FSR and a GPS module to capture the co-ordinates of the location.
  
@@ -46,6 +48,7 @@ Challenges and Future of CSDS:
 
 
 Arduino UNO R3
+
 ![image](https://github.com/user-attachments/assets/89c453ad-d6c4-42d1-819e-9bcd8513366f)
 
 The Arduino UNO R3 board is a popular microcontroller board often used electronics prototyping, learning electronics, and building simple to complex projects. When paired with the Arduino software platform, it offers a user-friendly environment for programming and interacting with electronics.
